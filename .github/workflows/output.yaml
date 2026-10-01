@@ -4,5 +4,7 @@ jobs:
   job1:
    runs-on: ubuntu-latest
    steps:
-     - run: echo "hello everyone" >> $GITHUB_OUTPUT
-     - run: echo "$GITHUB_OUTPUT"
+     - name: print the message
+       run: echo "hello everyone" >> $GITHUB_OUTPUT
+     - name: print the same
+       run: echo "$GITHUB_OUTPUT"
