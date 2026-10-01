@@ -5,4 +5,4 @@ jobs:
    runs-on: ubuntu-latest
    steps:
      - run: echo "hello everyone" >> $GITHUB_OUTPUT
-     - run: echo $GITHUB_OUTPUT
+     - run: echo "$GITHUB_OUTPUT"
