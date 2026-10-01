@@ -5,6 +5,7 @@ jobs:
    runs-on: ubuntu-latest
    steps:
      - name: print the message
-       run: echo "hello everyone" >> $GITHUB_OUTPUT
+       id: step1
+       run: echo " f1=hello everyone" >> $GITHUB_OUTPUT
      - name: print the same
-       run: echo "$GITHUB_OUTPUT"
+       run: echo " ${{ steps.step1.outputs.f1 }}"
