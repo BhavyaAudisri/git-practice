@@ -8,4 +8,4 @@ jobs:
        id: step1
        run: echo " f1=hello everyone" >> $GITHUB_OUTPUT
      - name: print the same
-       run: echo " ${{ steps.step1.outputs.f1 }}"
+       run: echo " ${{ steps.step1.output.f1 }}"
